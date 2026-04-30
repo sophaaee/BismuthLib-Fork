@@ -1,36 +1,25 @@
 {
-	"schemaVersion": 1,
-	"id": "bismuthlib",
-	"version": "${version}",
-	
-	"name": "Bismuth Lib",
-	"description": "A mod and library for colored lights",
-	"authors": [
-		"paulevs"
-	],
-	"contact": {
-		"homepage": "https://github.com/paulevsGitch/BismuthLib",
-		"sources": "https://github.com/paulevsGitch/BismuthLib",
-		"issues": "https://github.com/paulevsGitch/BismuthLib/issues"
-	},
-	
-	"license": "MIT",
-	"icon": "assets/bismuthlib/icon.png",
-	
-	"environment": "client",
-	"entrypoints": {
-		"client": [
-			"ru.paulevs.bismuthlib.BismuthLibClient"
-		]
-	},
-	"mixins": [
-		"bismuthlib.mixins.json"
-	],
-	
-	"depends": {
-		"fabricloader": ">=0.14.6",
-		"fabric": "*",
-		"minecraft": "~1.19",
-		"java": ">=17"
-	}
+    "schemaVersion": 1,
+    "id": "bismuthlib",
+    "version": "${version}",
+    "name": "BismuthLib",
+    "description": "A simple colored light mod-library for Fabric.",
+    "authors": ["paulevsGitch"],
+    "contact": {
+        "sources": "https://github.com/paulevsGitch/BismuthLib"
+    },
+    "license": "MIT",
+    "environment": "client",
+    "entrypoints": {
+        "client": ["ru.paulevs.bismuthlib.BismuthLib"]
+    },
+    "mixins": ["bismuthlib.mixins.json"],
+    "depends": {
+        "fabricloader": ">=0.18.6",
+        "fabric-api": "*",
+        "minecraft": "~1.21.11"
+    },
+    "suggests": {
+        "sodium": "*"
+    }
 }
